@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="/styles/styles.css"> 
         <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="/styles/styles.css">
     </head>
     <body>
         <div class="main">
         <h4>Here is data:</h4>
         <hr>
+        <form action="/process" method="POST">
+            <input type="text" name="channel">
+            <input type="submit" name="name">
+        </form>
         <ol>
         <li>Video:<snap class="names">{{.Name}}</snap></li>
         <li>Description:<snap class="names">{{.Desc}}</snap></li>

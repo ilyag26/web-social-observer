@@ -25,10 +25,8 @@ func Scrape(Channel string) {
 	if err != nil {
 		log.Fatal(err)
 	}
-	doc.Find("title").Each(func(i int, s *goquery.Selection) {
-		NameRet = s.Text()
-	})
 	doc.Find("body").Each(func(i int, s *goquery.Selection) {
+		NameRet, _ = s.Find("meta[itemprop=\"name\"]").Attr("content")
 		DescRet, _ = s.Find("meta[itemprop=\"description\"]").Attr("content")
 		DateRet, _ = s.Find("meta[itemprop=\"datePublished\"]").Attr("content")
 		ViewsRet, _ = s.Find("meta[itemprop=\"interactionCount\"]").Attr("content")
