@@ -1,0 +1,15 @@
+.main{
+    width:50%;
+    border: 1px solid black;
+    margin:20px auto;
+}
+.main h4{
+    text-align:center;
+}
+.main .names{
+    font-style: italic;
+}
+
+hr{
+    width:75%;
+}
