@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="/styles/styles.css">
+    </head>
+    <body>
+        <div class="main">
+        <h4>Here is data:</h4>
+        <hr>
+        <form action="/videocheckprocess" method="POST">
+            <input type="text" name="videoURL">
+            <input type="submit" value="Send">
+            <a href="/videocheck"><input type="button" value="Clear"></a>
+        </form>
+        <ul>
+        <li>Video:<snap class="names">{{.Name}}</snap></li>
+        <li>Description:<snap class="names">{{.Desc}}</snap></li>
+        <li>Date:<snap class="names">{{.Date}}</snap></li>
+        <li>Views:<snap class="names">{{.Views}}</snap></li>
+        </ul>
+    </div>
+    </body>
+</html>

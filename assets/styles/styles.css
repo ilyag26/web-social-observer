@@ -2,14 +2,16 @@
     width:50%;
     border: 1px solid black;
     margin:20px auto;
-}
-.main h4{
+    padding: 10px;
+    border-radius:10px;
     text-align:center;
+}
+.main ul{
+    text-align: left;
 }
 .main .names{
     font-style: italic;
 }
-
 hr{
     width:75%;
 }

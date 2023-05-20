@@ -8,16 +8,16 @@
         <div class="main">
         <h4>Here is data:</h4>
         <hr>
-        <form action="/process" method="POST">
-            <input type="text" name="channel">
-            <input type="submit" name="name">
+        <form action="/channelcheckprocess" method="POST">
+            <input type="text" name="channelURL">
+            <input type="submit" value="Send">
+            <a href="/channelcheck"><input type="button" value="Clear"></a>
         </form>
-        <ol>
+        <ul>
         <li>Video:<snap class="names">{{.Name}}</snap></li>
         <li>Description:<snap class="names">{{.Desc}}</snap></li>
-        <li>Date:<snap class="names">{{.Date}}</snap></li>
         <li>Views:<snap class="names">{{.Views}}</snap></li>
-        </ol>
+        </ul>
     </div>
     </body>
 </html>
