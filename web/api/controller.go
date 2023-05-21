@@ -50,7 +50,9 @@ func channelCheckProcess(w http.ResponseWriter, r *http.Request) {
 	dataChannel := d.ChannelData{
 		Name:  n.NameChannelRet,
 		Desc:  n.DescChannelRet,
-		Views: n.Maind,
+		Views: n.ViewsChannelRet,
+		Date:  n.DateChannelRet,
+		Subs:  n.SubsChannelRet,
 	}
 	channelCheckProcessTpl.Execute(w, dataChannel)
 }

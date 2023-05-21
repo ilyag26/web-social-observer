@@ -14,7 +14,7 @@ var (
 	NameVideoRet, ViewsVideoRet, DescVideoRet, DateVideoRet, NameChannelRet, ViewsChannelRet, DescChannelRet, DateChannelRet, SubsChannelRet string
 )
 var ArrayForData []string
-var Maind string
+var Views string
 
 func ScrapeVideo(videoURL string) {
 	res, err := http.Get(videoURL)
@@ -65,8 +65,12 @@ func ScrapeChannel(channelURL string) {
 	for _, row := range channelData.Contents.TwoColumnBrowseResultsRenderer.Tabs {
 		for _, row2 := range row.TabRenderer.Content.SectionListRenderer.Contents {
 			for _, row3 := range row2.ItemSectionRenderer.Contents {
-				Maind = row3.ChannelAboutFullMetadataRenderer.ViewCountText.SimpleText
+				ViewsChannelRet = row3.ChannelAboutFullMetadataRenderer.ViewCountText.SimpleText
+				for _, row4 := range row3.ChannelAboutFullMetadataRenderer.JoinedDateText.Runs {
+					DateChannelRet = row4.Text
+				}
 			}
 		}
 	}
+	SubsChannelRet = channelData.Header.C4TabbedHeaderRenderer.SubscriberCountText.SimpleText
 }
