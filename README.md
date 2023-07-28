@@ -8,4 +8,5 @@ Video data collection demo by link<br>
 <img width="1093" alt="Снимок экрана 2023-07-28 в 15 31 04" src="https://github.com/ilyag26/web-social-observer/assets/30949511/f722122f-b915-4674-a216-b4dac2945dca">
 <br>
 Channel data collection demo by link<br>
-<img width="1117" alt="Снимок экрана 2023-07-28 в 15 30 49" src="https://github.com/ilyag26/web-social-observer/assets/30949511/88da52d8-257c-4ba7-9109-266afb4704dd">
+<img width="1071" alt="Снимок экрана 2023-07-28 в 15 39 24" src="https://github.com/ilyag26/web-social-observer/assets/30949511/59ba7e68-fee6-4937-8b60-c42c13f3fa4e">
+
