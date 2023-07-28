@@ -31,9 +31,9 @@ func ScrapeVideo(videoURL string) {
 	}
 	doc.Find("body").Each(func(i int, s *goquery.Selection) {
 		NameVideoRet, _ = s.Find("meta[itemprop=\"name\"]").Attr("content")
-		ViewsVideoRet, _ = s.Find("meta[itemprop=\"description\"]").Attr("content")
-		DescVideoRet, _ = s.Find("meta[itemprop=\"datePublished\"]").Attr("content")
-		DateVideoRet, _ = s.Find("meta[itemprop=\"interactionCount\"]").Attr("content")
+		DescVideoRet, _ = s.Find("meta[itemprop=\"description\"]").Attr("content")
+		DateVideoRet, _ = s.Find("meta[itemprop=\"datePublished\"]").Attr("content")
+		ViewsVideoRet, _ = s.Find("meta[itemprop=\"interactionCount\"]").Attr("content")
 	})
 }
 
