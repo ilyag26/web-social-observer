@@ -5,8 +5,9 @@ A simple web application that allows you to parse data about YouTube channels an
 - Collection of YouTube video data such as exact video views, publication date, video descriptions<br>
 <h1>Examples</h1>
 Video data collection demo by link<br>
-<img width="1093" alt="Снимок экрана 2023-07-28 в 15 31 04" src="https://github.com/ilyag26/web-social-observer/assets/30949511/f722122f-b915-4674-a216-b4dac2945dca">
+<img width="1093" alt="Снимок экрана 2023-07-28 в 15 31 04" src="https://github.com/ilyag26/web-social-observer/assets/30949511/4c5c2701-3836-40e4-abb2-3e79108af17e">
 <br>
 Channel data collection demo by link<br>
-<img width="1071" alt="Снимок экрана 2023-07-28 в 15 39 24" src="https://github.com/ilyag26/web-social-observer/assets/30949511/59ba7e68-fee6-4937-8b60-c42c13f3fa4e">
+<img width="1093" alt="Снимок экрана 2023-07-28 в 15 31 04" src="https://github.com/ilyag26/web-social-observer/assets/30949511/19073416-8b86-4a4d-8e99-c544c3cab35f">
+
 
