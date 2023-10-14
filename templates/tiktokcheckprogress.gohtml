@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="/styles/styles.css">
+    </head>
+    <body>
+        <div class="main">
+        <h4>Here is data:</h4>
+        <hr>
+        <form action="/ttcheckprocess" method="POST">
+            <input type="text" name="accountURL">
+            <input type="submit" value="Send">
+            <a href="/"><input type="button" value="Clear"></a>
+        </form>
+        <ul>
+        <li>Name:<snap class="names">{{.Name}}</snap></li>
+        <li>Subscribers:<snap class="names">{{.Subs}}</snap></li>
+        <li>Likes:<snap class="names">{{.Likes}}</snap></li>
+        <li>Description:<snap class="names">{{.Desc}}</snap></li>
+        </ul>
+    </div>
+    </body>
+</html>
